@@ -20,7 +20,7 @@ print("ASR model loaded successfully.")
 
 # Load Silero VAD model
 print("Loading Silero VAD model...")
-vad_model, utils = torch.hub.load(repo_or_dir='snakers4/silero-vad', model='silero_vad')
+vad_model, utils = torch.hub.load(repo_or_dir='snakers4/silero-vad', model='silero_vad', trust_repo=True)
 (get_speech_timestamps, _, _, VADIterator, collect_chunks) = utils
 print("VAD model loaded successfully.")
 
