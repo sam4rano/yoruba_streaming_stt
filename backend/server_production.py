@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_PATH = "whisper-small-yoruba-ct2"
+MODEL_PATH = "whisper-small-yor-ct2"
 if not os.path.exists(MODEL_PATH):
     raise RuntimeError(f"CTranslate2 model directory '{MODEL_PATH}' not found. Please run the converter first.")
 
