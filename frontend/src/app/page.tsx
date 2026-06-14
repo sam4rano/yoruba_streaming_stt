@@ -47,7 +47,7 @@ export default function Home() {
 
   // Set up audio stream hook
   const { isRecording, isConnected, startStream, stopStream, analyserRef } = useAudioStream({
-    wsUrl: 'ws://localhost:8000/stream',
+    wsUrl: process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000/stream',
     onTranscriptReceived: (text) => {
       setTranscripts((prev) => [...prev, text]);
       showStatus(null);
