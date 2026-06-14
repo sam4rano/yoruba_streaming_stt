@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+websockets
+torch
+torchaudio
+numpy
+transformers
+soundfile
+librosa
+accelerate
+sounddevice
+faster-whisper
+
+

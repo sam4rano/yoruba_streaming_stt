@@ -1,0 +1,39 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# Local Environment Secrets
+frontend/.env
+frontend/.env.local
+.env
+.env.local
+
+# Large Model Weights (CTranslate2)
+backend/whisper-small-yoruba-ct2/
+whisper-small-yoruba-ct2/
+backend/whisper-small-yor-ct2/
+whisper-small-yor-ct2/
+*-ct2/
+*ct2/
+
+
+# Audio outputs / tests
+*.wav
+backend/*.wav
+
+# OS files
+.DS_Store
+Thumbs.db

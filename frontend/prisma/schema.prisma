@@ -1,0 +1,18 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Transcript {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now()) @map("created_at")
+  text      String
+  duration  Float
+  title     String?
+
+  @@map("transcripts")
+}
